@@ -2,10 +2,10 @@
 SOCIAL VULNERABILITY MAPPING IMPLEMENTED IN TIDYCENSUS FOR R
 
 ---
-title: "Building an Adaptive Capacity Index Using TidyCensus in R"
-author: "Anthony Holmes - Prepared on Behalf of The Nature Conservancy - Oregon"
-copyright: 2020 - The Nature Conservancy
-date: "March, 2020"
+Title: "Building an Adaptive Capacity Index Using TidyCensus in R"<br>
+Author: "Anthony Holmes - Prepared on Behalf of The Nature Conservancy - Oregon"<br>
+copyright: 2020 - The Nature Conservancy<br>
+date: "March, 2020"<br><br>
 ---
 
 #Introduction#
