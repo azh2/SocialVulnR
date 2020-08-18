@@ -6,16 +6,6 @@ title: "Building an Adaptive Capacity Index Using TidyCensus in R"
 author: "Anthony Holmes - Prepared on Behalf of The Nature Conservancy - Oregon"
 copyright: 2020 - The Nature Conservancy
 date: "March, 2020"
-output:
-  html_document:
-    toc: true
-    toc_float: 
-      toc_float: true
-      collapsed: false
-    toc_depth: 2
-    theme: journal
-editor_options: 
-  chunk_output_type: console
 ---
 
 #Introduction#
