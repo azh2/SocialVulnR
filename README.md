@@ -8,7 +8,7 @@ Copyright: 2020 - The Nature Conservancy<br>
 Date: "March, 2020"<br><br>
 ---
 
-#Introduction#
+<b>Introduction</b>
 
 <p>According to the CDC, Social vulnerability refers to the "resilience of communities when confronted by external stresses on humanhealth, stresses such as natural or human-caused disasters, or disease outbreaks." These methods implement an index similar to the one maintained by the CDC which are adapted from methods published by Flanagan et al. (2011) in "A Social Vulnerability Index for Disaster Management," which describes 13 metrics for assesing the 'social vulnerability' or 'adaptive capacity' (Davies et al.2018) of a census tract. This study attempts to replicate these metrics as closely as possible at a block group scale using 5 year ACS data in order to quantify the capacity of a block-group to respond to a given disturbance, minimizing risks to health, safety, property and other essential services. This index could be used to identify areas and communities at an increased risk and target appropriate response, recovery and mitigation efforts.
 
@@ -16,25 +16,25 @@ The SVI/ACI is <b>just one</b> component of a vulnerability assesment which woul
 
 The index comprises 4 domains including:
 
-> Socioeconomic Status
+> <b>Socioeconomic Status</b>
 
     Percent of Persons Below Poverty Level
     Percent of Persons (age 16+) Unemployed
     Per Capita Income
 
-> Language & Education
+> <b>Language & Education</b>
 
     Percent of Persons With No 12th Grade Education
     Percent of Persons Do Not Who Speak English
 
-> Demographics
+> <b>Demographics</b>
 
     Percent of Persons 65 Years of Age or Older
     Percent of Persons 17 Years of Age or Younger
     Percent of Persons 5 Years of Age or Older With a Disability
     Percent of Single Parent Households
 
-> Housing & Transportation
+> <b>Housing & Transportation</b>
 
     Percent of Persons Living in Multi-Unit Structure
     Percent of Persons Living in a Mobile Home
@@ -46,19 +46,19 @@ The index is constructed according to Flanagan et al. (2011) by assigning a perc
 
 Additional variables were brought in based on a review of the existing literature, however, these were not included in the index in this script since we were attempting to implement the existing literature of Flanagan et al. as closely as possible, however, the literature cited here supports their application in future iterations of the SVI index and their contribution to social vulnerability is worthy of further review.
 
-#Works Cited#
+<b>Works Cited</b>
 
 Davies, Ian P., Haugo, Ryan D., Robertson, James C., & Levin, Phillip S. (2018). The unequal vulnerability of communities of color to wildfire. PLoS ONE, 13(11), E0205825.
 
 Flanagan BE, Gregory EW, Hallisey EJ, Heitgerd JL, Lewis B. A Social Vulnerability Index for Disaster Management. J Homel Secur Emerg Manag. 2011;8. https://doi.org/10.2202/1547-7355.1792
 
-#Tidy Census#
+<b>Tidy Census</b>
 
 This script implements the R Package TidyCensus to bring in the necessary variables for this index, this allows the index to be easily reproduced for a vairety of geographies and time periods, many of the variables were found at the block group level and some could not be derived at this scale, there may be alternative variables or indicators available, however, this project only attempts to reproduce the index as published at the finest geographic scale available.
 
 Kyle Walker (2020). tidycensus: Load US Census Boundary and Attribute Data as 'tidyverse' and 'sf'-Ready Data Frames. R package version 0.9.6. https://CRAN.R-project.org/package=tidycensus
 
-#Block Group Level:#
+<b>Block Group Level Variables:</b>
 
 These were the variables available/derived at the block group level
 
@@ -77,7 +77,7 @@ These were the variables available/derived at the block group level
 > PERCENT MINORITY
 
 
-#Variables:#
+<b>Variables:</b>
 
 These are all the variables used in the calculations at the blockgroup level
 
@@ -85,7 +85,7 @@ These are all the variables used in the calculations at the blockgroup level
 c('B25003_001','B25003_003','B25070_007','B25070_008','B25070_009','B25070_010','B25071_001','B11007_001','B11007_003','B25034_001','B25034_008','B25034_009','B25034_01','B25034_011','B01003_001','B19301_001','B25033_001','B25033_006','B25033_007','B25033_012','B25033_013','B25044_001','B25044_003','B25044_010','B23025_003','B23025_005','B25014_001','B25014_005','B25014_006','B25014_007','B25014_011','B25014_012','B25014_013','B25024_001','B25024_007','B25024_008','B25024_009','B09021_022','B09021_001','B01001_020','B01001_021','B01001_022','B01001_023','B01001_024','B01001_025','B01001_044','B01001_045','B01001_046','B01001_047','B01001_048','B01001_049','B99163_001','B99163_005','B01001_003','B01001_004','B01001_005','B01001_006','B01001_027','B01001_028','B01001_029','B01001_030','B03002_003','B02001_004','B02001_00','B02001_003','B03003_003','B02001_006','B02001_007','B02001_008','B03002_003','B03002_001','B02001_001','B25002_001','B25002_003','B15003_001','B15003_016','B15003_017','B15003_018','B15003_019','B15003_020','B15003_021','B15003_022','B15003_023','B15003_024','B15003_025')
 ```
 
-#How The Values Were Calculated:#
+<b>How The Values Were Calculated:</b>
 
     1.) TOTAL POPULATION
 
@@ -328,7 +328,7 @@ B25034_011 - Estimate!!Total!!Built 1939 or earlier
 #Notes: 
 “Congress created the National Flood Insurance Program (NFIP) in 1968 In order to participate, jurisdictions are required to adopt a floodplain management ordinance. Units that pre-date the local adoption of those ordinances are more likely to be out of compliance with the design and construction standards they require. Thus, the age of the buildings in floodplains may offer some insight into whether buildings are designed or retrofitted for flooding.” (Furman Center)
 
->Tract Level:
+><b>Tract Level:</b>
 
 These Variables were only found to be available at the Tract level, that is not to say a suitable variable does not exist at the block-group level
 
@@ -405,7 +405,7 @@ Install and load required packages
     suppressMessages(lapply(ReqPkgs, require, character.only = TRUE))
 ```
 
-> TidyCensus
+> <b>TidyCensus</b>
 
 For this section you will use the `tidycensus` package to read in data from the American Community Survey, including geometry.
 
@@ -416,9 +416,9 @@ Get a Free Census Api Key Here: https://api.census.gov/data/key_signup.html
     readRenviron("~/.Renviron")
 ```
 
-> List Counties in State
+> <b>List Counties in State</b>
 
-Now were making a simple character vector to store the names of all the counties we'll be using to pull in the census data since no option exists to pull out blockgroup level data for the whole state.
+Now we're making a simple character vector to store the names of all the counties we'll be using to pull in the census data since no option exists to pull out blockgroup level data for the whole state.
 
 ```{r}
 Counties <- tigris::list_counties(state = 'Oregon')
@@ -426,7 +426,7 @@ Counties <- Counties$county
 print(Counties)
 ```
 
-> List Variables To Be Pulled In
+> <b>List Variables To Be Pulled In</b>
 
 Now were making a simple character vector to store the names of all the variables we'll be pulling in at the blockgroup and tract level, these were selected through a long process of trial an error
 
@@ -436,7 +436,7 @@ varsBG <- c('B25003_001','B25003_003','B25070_007','B25070_008','B25070_009','B2
 varsCT <- c('B18101_025','B18101_026','B18101_006','B18101_007','C18130_009','C18130_010','C18130_016','C18130_017','B26001_001','B11004_012','B11004_018','B09008_001','B09008_010','B09008_011','B09008_012','B17023_001','B17023_016','B17023_017','B17023_018','B22002_001')
 ```
 
-> Pulling in Block Group Level 
+> <b>Pulling in Block Group Level Variables</b>
 
 This chunk of code is pulling in all the blockgroup level variables described previously
 
@@ -474,7 +474,7 @@ CBG18_1$TRACT_GEOID <- substring(CBG18_1$GEOID, 1, 11)
 print(dim(CBG18_1)) #The dimensions should match this for Oregon: 2,634 x 187
 ```
 
-> Pulling in Tract Level Variables
+> <b>Pulling in Tract Level Variables</b>
 
 This chunk of code is pulling in all the tract level variables described previously
 
@@ -514,7 +514,7 @@ print(dim(CT18B))
 #The dimensions should match this for Oregon: 834 x 45
 ```
 
-> Join Tables
+> <b>Join Tables</b>
 
 This chunk uses dplyr to join the tract level variables to the block groups, the variables remain consistent across the block group, this is not ideal and if you find some way to represent these variables more accurately at the block group level, please feel free to change them.
 
@@ -526,7 +526,7 @@ dim(JndTbls) #get dimensions
 #The dimensions should match this for Oregon: 2,634 x 231
 ```
 
-> Now to calculate each of the statistics
+> <b>Now to calculate each of the statistics:</b>
 
 ```{r}
 JndTbls$BLANK1 <- " " #These breaks just make it easier to navigate the table
@@ -614,7 +614,7 @@ JndTbls$SUMRANK = a+b+c+d+e+f+g+h+i+j+k+l+m+n
 JndTbls$ADPTVCAPACITY <- dplyr::percent_rank(JndTbls$SUMRANK)
 ```
 
-> This Finds How Much Each Variable Contributed to The Final Percent Rank
+> <b>This Finds How Much Each Variable Contributed to The Final Percent Rank</b>
 
 ```{r}
 # This Determines the Percentage Contribution to Final Rank
@@ -629,7 +629,7 @@ RnkPerc <- RnkPerc[c(geoid, a:z)]
 JndTbls <- dplyr::right_join(JndTbls, RnkPerc, by = "GEOID")
 ```
 
-> Now to Bring in Geometry From Tigris
+> <b>Now to Bring in Geometry From Tigris</b>
 
 ```{r, results = "hide"}
 JndTbls$GEOID <- JndTbls$GEOID.x #Geoid.x was created in the previous join and needs to be renamed before joining it to the geometry
@@ -638,7 +638,7 @@ blockgroup_Geom <- tigris::block_groups(state = 'OR', county = Counties, cb = TR
 JndTblsSP <- sp::merge(x = blockgroup_Geom, JndTbls, by = 'GEOID') #Now we're using the GEOID to join the Census Data to the Geometry
 ```
 
-> Now Let's Map Our Results!
+> <b>Now Let's Map Our Results!</b>
 
 ```{r}
 suppressPackageStartupMessages(require(leaflet))
