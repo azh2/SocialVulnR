@@ -48,9 +48,9 @@ Additional variables were brought in based on a review of the existing literatur
 
 <b>Works Cited</b>
 
-Davies, Ian P., Haugo, Ryan D., Robertson, James C., & Levin, Phillip S. (2018). The unequal vulnerability of communities of color to wildfire. PLoS ONE, 13(11), E0205825.
+>Davies, Ian P., Haugo, Ryan D., Robertson, James C., & Levin, Phillip S. (2018). The unequal vulnerability of communities of color to wildfire. PLoS ONE, 13(11), E0205825.
 
-Flanagan BE, Gregory EW, Hallisey EJ, Heitgerd JL, Lewis B. A Social Vulnerability Index for Disaster Management. J Homel Secur Emerg Manag. 2011;8. https://doi.org/10.2202/1547-7355.1792
+>Flanagan BE, Gregory EW, Hallisey EJ, Heitgerd JL, Lewis B. A Social Vulnerability Index for Disaster Management. J Homel Secur Emerg Manag. 2011;8. https://doi.org/10.2202/1547-7355.1792
 
 <b>Tidy Census</b>
 
@@ -58,7 +58,7 @@ This script implements the R Package TidyCensus to bring in the necessary variab
 
 Kyle Walker (2020). tidycensus: Load US Census Boundary and Attribute Data as 'tidyverse' and 'sf'-Ready Data Frames. R package version 0.9.6. https://CRAN.R-project.org/package=tidycensus
 
-<b?Licensing/Disclaimer:</b>
+<b>Licensing/Disclaimer:</b>
 
 THIS SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
