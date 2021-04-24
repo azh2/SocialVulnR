@@ -1,4 +1,6 @@
-# SocialVulnR
+# **Please see https://github.com/azh2/Social-Vulnerability-R for updated repository, this repository will be archived.** 
+
+## SocialVulnR
 SOCIAL VULNERABILITY MAPPING IMPLEMENTED IN TIDYCENSUS FOR R
 
 ---
